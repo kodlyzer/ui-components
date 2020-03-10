@@ -16,13 +16,15 @@ import { CoreModule } from '../core/core.module';
 import { DemoIconComponent } from './demo-icon/demo-icon.component';
 import { DemoBadgeComponent } from './demo-badge/demo-badge.component';
 import { DemoHomeComponent } from './demo-home/demo-home.component';
+import { DemoButtonComponent } from './demo-button/demo-button.component';
 
 
 
 
 const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent, TreeDemoComponent,
     LivePageComponent, ListgroupDemoComponent,
-    TabsDemoComponent, DemoTableComponent];
+    TabsDemoComponent, DemoTableComponent,
+    DemoButtonComponent];
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],

@@ -11,6 +11,7 @@ import { ListgroupDemoComponent } from './demo/listgroup-demo/listgroup-demo.com
 import { DemoIconComponent } from './demo/demo-icon/demo-icon.component';
 import { DemoBadgeComponent } from './demo/demo-badge/demo-badge.component';
 import { DemoHomeComponent } from './demo/demo-home/demo-home.component';
+import { DemoButtonComponent } from './demo/demo-button/demo-button.component';
 
 
 const routes: Routes = [
@@ -26,6 +27,7 @@ const routes: Routes = [
   { path: 'icon', component: DemoIconComponent },
   { path: 'badge', component: DemoBadgeComponent },
   { path: 'home', component: DemoHomeComponent },
+  { path: 'button', component: DemoButtonComponent }
 ];
 
 @NgModule({

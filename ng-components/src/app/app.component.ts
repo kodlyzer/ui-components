@@ -57,6 +57,11 @@ export class AppComponent {
       displayName: 'Badge',
       route: 'badge',
       routelink: 'badge'
+    },
+    {
+      displayName: 'Button',
+      route: 'button',
+      routelink: 'button'
     }
   ];
 

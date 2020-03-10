@@ -62,6 +62,11 @@ export class AppComponent {
       displayName: 'Button',
       route: 'button',
       routelink: 'button'
+    },
+    {
+      displayName: 'Input',
+      route: 'input',
+      routelink: 'input'
     }
   ];
 

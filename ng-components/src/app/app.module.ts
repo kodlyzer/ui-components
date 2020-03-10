@@ -9,8 +9,6 @@ import { DemoModule } from './demo/demo.module';
 import { HeaderModule } from './core/header/header.module';
 import { BadgeModule } from './core/badge/badge.module';
 
-
-
 @NgModule({
   declarations: [
     AppComponent

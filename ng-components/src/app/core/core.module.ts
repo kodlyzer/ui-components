@@ -13,8 +13,10 @@ import { IconModule } from './icon/icon.module';
 import { BadgeModule } from './badge/badge.module';
 import { ButtonModule } from './button/button.module';
 import { InputModule } from './input/input.module';
+import { NotifcationModule } from './notification/notification.module';
 const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
-    TabModule, TreeModule, TableModule, ListGroupModule, BadgeModule, IconModule, ButtonModule,  InputModule];
+    TabModule, TreeModule, TableModule, ListGroupModule, BadgeModule, IconModule, ButtonModule,  InputModule,
+    NotifcationModule];
 
 
 @NgModule({

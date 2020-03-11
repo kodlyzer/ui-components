@@ -1,0 +1,23 @@
+<div class="kx-notification kx-notification--{{type}} kx-notification--block kx-flex kx-align-items-start kx-justify-content-start">
+    <div class="kx-notification__content kx-flex kx-flex-wrap kx-align-items-start">
+        <!-- BUTTON Component -->
+        <button class="kx-btn kx-btn--size-base kx-btn--icon kx-notification__close" aria-label="Close">
+    <span class="kx-btn__inner">
+        <i class="kx-icon kx-icon--size-moderate">
+        <svg focusable="false">
+            <use href="../../assets/img/icons/sprites/icons.svg#close"></use>
+        </svg>
+    </i>
+        <span class="kx-btn__txt kx-is-vishidden">Close</span>
+    </span>
+</button>
+        <header class="kx-notification__header">
+            <h3 class="kx-notification__title">
+                <ng-content select="kdi-notification-header"></ng-content>
+            </h3>
+        </header>
+        <div class="kx-notification__body">
+            <ng-content select="kdi-notification-content"></ng-content>
+        </div>
+    </div>
+</div>

@@ -67,6 +67,11 @@ export class AppComponent {
       displayName: 'Input',
       route: 'input',
       routelink: 'input'
+    },
+    {
+      displayName: 'Notification',
+      route: 'notification',
+      routelink: 'notification'
     }
   ];
 

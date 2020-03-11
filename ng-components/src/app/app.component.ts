@@ -67,6 +67,11 @@ export class AppComponent {
       displayName: 'Input',
       route: 'input',
       routelink: 'input'
+    },
+    {
+      displayName: 'Checkbox',
+      route: 'checkbox',
+      routelink: 'checkbox'
     }
   ];
 

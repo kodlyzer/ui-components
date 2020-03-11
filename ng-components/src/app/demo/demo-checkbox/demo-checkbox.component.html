@@ -1,0 +1,55 @@
+<div class="docs-container">
+    <p class="kx-typescale--xlarge">Badge Component</p>
+    <div class="main">
+      <div class="kx-row">
+        <div class="kx-col--6">
+          <section class="output-section">
+            <kdi-checkbox [checked]="demoCheckbox1.checked" [label]="demoCheckbox1.label" [disabled]="demoCheckbox1.disabled" ></kdi-checkbox>
+            <kdi-checkbox [checked]="demoCheckbox2.checked" [label]="demoCheckbox2.label" [disabled]="demoCheckbox2.disabled" ></kdi-checkbox>
+            <kdi-checkbox [checked]="demoCheckbox3.checked" [label]="demoCheckbox3.label" [disabled]="demoCheckbox3.disabled" ></kdi-checkbox>
+          </section>
+          <section class="json-section">
+            <p class="kx-typescale--base kx-m--small kx-m">Test Inputs (JSON DATA)</p>
+            <textarea class="json" [(ngModel)]="Checkbox"></textarea>
+          </section>
+        </div>
+      </div>
+    </div>
+  
+    <section>
+      <ul>
+        <li class="kx-typescale--large">Description</li>
+        <section class="code-section">
+          <p class="kx-typescale--base"> The checkbox is shown as a square box that is ticked (checked) when activated.Checkboxes are used to let a user select one or more options of a limited number of choices.
+            Checkboxes are for selecting one or several options in a list, while radios are for selecting one option from many </p>
+  
+        </section>
+  
+        <li class="kx-typescale--large">Configuration Options</li>
+        <section class="code-section">
+          <p class="kx-typescale--base">Use this Selector in your component to include Checkbox Component.</p>
+          <pre class="kx-p--base kx-typescale--base code mh">
+          &lt;kdi-checkbox [checked]="demoCheckbox1.checked" [label]="demoCheckbox1.label" [disabled]="demoCheckbox1.disabled"&gt;
+          &lt;/kdi-checkbox&gt;</pre>
+        </section>
+        <li class="kx-typescale--large">How to use ?</li>
+        <section class="code-section">
+          <p class="kx-typescale--base">Follow the following format to use it.</p>
+          <pre class="kx-p--base kx-typescale--base code mh">
+             <b>  demoBadge= &#123;  <b>color</b>:"name of the color (from the list of colors provided by KDI)",  
+                <b>label</b>:"name of the label you want to display "   &#125; ; </b>                        
+             <i>Here we have used :</i>
+               demoBadge1= &#123;  color: 'primary',  label:'Primary' &#125; ;
+               demoBadge2= &#123; color:'success', label:'Success'  &#125; ;
+               and so on.    
+               
+               Note: If you don't provide the "color" value, by default it will give the "foam" as color.
+               </pre>
+          <p> The list of colors present now are
+            <i>primary, secondary, success, danger, foam, navy and warning</i>.
+          </p>
+        </section>
+  
+      </ul>
+    </section>
+  </div>

@@ -1,8 +1,8 @@
-import { Directive, Component } from "@angular/core";
+import { Directive, Component } from '@angular/core';
 
 @Component({
   selector: 'kdicard',
-  exportAs: "kdi-card",
+  exportAs: 'kdi-card',
   templateUrl: './card.component.html',
   styleUrls: ['card.scss'],
 })

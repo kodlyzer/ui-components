@@ -3,25 +3,32 @@
   <div class="main">
     <div class="kx-row">
       <div class="kx-col--6">
+        Code Playground
         <section class="output-section">
           <div class="output-section-button-list">
             <div class="output-section-button">
-             <kdi-notification [isSuccess] = true>
-               <kdi-notification-header>
-                {{demoNotification.header}}
-               </kdi-notification-header>
-               <kdi-notification-content>
-                {{demoNotification.content}}
-               </kdi-notification-content>
-             </kdi-notification>
+              <kdi-notification [isNeutral]="notificationtype[0].value" [isSuccess]="notificationtype[1].value"[isDanger]="notificationtype[2].value"[isWarning]="notificationtype[3].value" [isCritical]="notificationtype[4].value">
+                <kdi-notification-header>
+                  {{demoNotification.header}}
+                </kdi-notification-header>
+                <kdi-notification-content>
+                  {{demoNotification.content}}
+                </kdi-notification-content>
+              </kdi-notification>
             </div>
-  
+
           </div>
         </section>
         <section class="json-section">
-          <p class="kx-typescale--base kx-m--small kx-m">Test Inputs (JSON DATA)</p>
-          <textarea class="json" [(ngModel)]="Badge"></textarea>
+          Change Notification type : 
+          <select id="select-type-basic" [(ngModel)]="status" (change)="changeNotification($event)">
+            <option *ngFor="let item of notificationtype">
+            {{item.color}}
+            </option>
+        </select>
         </section>
+        <br/>
+        <pre> Syntax: &lt;kdi-notification <b>[is{{status}}]</b>= boolean &gt;</pre>
       </div>
     </div>
   </div>
@@ -30,35 +37,52 @@
     <ul>
       <li class="kx-typescale--large">Description</li>
       <section class="code-section">
-        <p class="kx-typescale--base"> A badge can serve as a central element for the identity of a website and emerge as a reminder feature on every sub-site.
-          In contrast to the button(which is a useful element for call to action), badge is usually more than a call to action.
-          Generally, the badge is used for its importance as a home button, but there are more possibilities for use. </p>
-
+        <p class="kx-typescale--base"> A notification is a message that application displays in your app's UI to
+          provide the user with reminders, communication from other people, or other timely information from your app
+        </p>
       </section>
 
       <li class="kx-typescale--large">Configuration Options</li>
       <section class="code-section">
-        <p class="kx-typescale--base">Use this Selector in your component to include Badge Component.</p>
+        <p class="kx-typescale--base">Use this Selector in your component to include Notification Component.</p>
         <pre class="kx-p--base kx-typescale--base code mh">
-            &lt;kdi-badge [badge]="demoBadge"&gt;
-            &lt;/kdi-badge&gt;</pre>
+            &lt;kdi-notification [option]= boolean &gt;
+                &lt;kdi-notification-header &gt;
+                  //notification header
+                &lt;/kdi-notification-header&gt;
+
+                &lt;kdi-notification-content &gt;
+                  //conent for notifcation
+                &lt;/kdi-notification-content&gt;
+            &lt;/kdi-notification&gt;</pre>
       </section>
       <li class="kx-typescale--large">How to use ?</li>
       <section class="code-section">
-        <p class="kx-typescale--base">Follow the following format to use it.</p>
+        <p class="kx-typescale--base">Follow the following option you can use it.</p>
+        <ul >
+          <li>
+            isNeutral
+          </li>
+          <li>
+            isSuccess
+          </li>
+          <li>
+            isDanger
+          </li>
+          <li>
+            isWarning
+          </li>
+          <li>
+            isCritical
+          </li>
+        </ul>
         <pre class="kx-p--base kx-typescale--base code mh">
-           <b>  demoBadge= &#123;  <b>color</b>:"name of the color (from the list of colors provided by KDI)",  
-              <b>label</b>:"name of the label you want to display "   &#125; ; </b>                        
-           <i>Here we have used :</i>
-             demoBadge1= &#123;  color: 'primary',  label:'Primary' &#125; ;
-             demoBadge2= &#123; color:'success', label:'Success'  &#125; ;
-             and so on.    
-             
-             Note: If you don't provide the "color" value, by default it will give the "foam" as color.
-             </pre>
-        <p> The list of colors present now are
-          <i>primary, secondary, success, danger, foam, navy and warning</i>.
-        </p>
+            &lt;kdi-notification [option]= boolean &gt; for notification component
+
+            &lt;kdi-notification-header &gt; for giving header to your notification
+
+            &lt;kdi-notification-content &gt; for content for your notifcation it can include image paragraph tag.
+          </pre>
       </section>
 
     </ul>

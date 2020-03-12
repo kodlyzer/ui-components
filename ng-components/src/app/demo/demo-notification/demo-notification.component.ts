@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-
+interface Notifcationgrp {
+  color: string;
+  value: boolean;
+};
 @Component({
   selector: 'app-demo-notification',
   templateUrl: './demo-notification.component.html',
@@ -11,20 +14,27 @@ export class DemoNotificationComponent implements OnInit {
     // tslint:disable-next-line: max-line-length
     content: 'If needed (e.g. error message notifications), add extra information about the specific nature of a problem and a way to solve it.'
   };
+  status: string;
+  notificationtype: Array<Notifcationgrp> = [
+    {color : 'Neutral', value : false},
+    {color : 'Success', value : false},
+    {color : 'Danger', value : false},
+    {color : 'Warning', value : false},
+    {color : 'Critical', value : false}
+  ];
 
   constructor() { }
 
   ngOnInit() {
-  }
-  get Badge() {
-    return JSON.stringify(this.demoNotification, null, 2);
-  }
-
-  set Badge(v) {
-    try {
-      this.demoNotification = JSON.parse(v);
-    } catch (error) {
-      console.log('Error while typing JSON');
-    }
-  }
+    this.status = this.notificationtype[0].color;
+    this.notificationtype[0].value = true;
+   }
+   changeNotification() {
+     this.notificationtype.filter( (x: Notifcationgrp) =>{
+      x.value = false;
+      if (x.color === this.status){
+        x.value = true;
+      }
+     });
+   }
 }

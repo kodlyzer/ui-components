@@ -72,6 +72,11 @@ export class AppComponent {
       displayName: 'Notification',
       route: 'notification',
       routelink: 'notification'
+    },
+    {
+      displayName: 'Checkbox',
+      route: 'checkbox',
+      routelink: 'checkbox'
     }
   ];
 

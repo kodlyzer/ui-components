@@ -14,6 +14,7 @@ import { DemoHomeComponent } from './demo/demo-home/demo-home.component';
 import { DemoButtonComponent } from './demo/demo-button/demo-button.component';
 import { DemoInputComponent } from './demo-input/demo-input.component';
 import { DemoNotificationComponent } from './demo/demo-notification/demo-notification.component';
+import { DemoCheckboxComponent } from './demo/demo-checkbox/demo-checkbox.component';
 
 
 const routes: Routes = [
@@ -31,7 +32,8 @@ const routes: Routes = [
   { path: 'home', component: DemoHomeComponent },
   { path: 'button', component: DemoButtonComponent },
   { path: 'input', component: DemoInputComponent },
-  { path: 'notification', component: DemoNotificationComponent}
+  { path: 'notification', component: DemoNotificationComponent},
+  { path: 'checkbox', component: DemoCheckboxComponent }
 ];
 
 @NgModule({

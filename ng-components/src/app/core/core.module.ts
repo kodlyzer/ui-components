@@ -14,9 +14,10 @@ import { BadgeModule } from './badge/badge.module';
 import { ButtonModule } from './button/button.module';
 import { InputModule } from './input/input.module';
 import { NotifcationModule } from './notification/notification.module';
+import { CheckboxModule } from './checkbox/checkbox.module';
 const MODULES = [DropdownModule, ClickOutsideModule, ModalModule, HeaderModule, CardModule, StopPropogationModule,
     TabModule, TreeModule, TableModule, ListGroupModule, BadgeModule, IconModule, ButtonModule,  InputModule,
-    NotifcationModule];
+    NotifcationModule, CheckboxModule];
 
 
 @NgModule({

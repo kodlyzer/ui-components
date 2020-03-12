@@ -19,6 +19,7 @@ import { DemoHomeComponent } from './demo-home/demo-home.component';
 import { DemoButtonComponent } from './demo-button/demo-button.component';
 import { DemoInputComponent } from '../demo-input/demo-input.component';
 import { DemoNotificationComponent } from './demo-notification/demo-notification.component';
+import { DemoCheckboxComponent } from './demo-checkbox/demo-checkbox.component';
 
 
 
@@ -27,7 +28,7 @@ const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderCompone
     LivePageComponent, ListgroupDemoComponent,
     TabsDemoComponent, DemoTableComponent,
     DemoButtonComponent, DemoInputComponent,
-    DemoNotificationComponent];
+    DemoNotificationComponent,  DemoCheckboxComponent];
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],

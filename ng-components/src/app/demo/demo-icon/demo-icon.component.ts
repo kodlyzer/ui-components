@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DemoIconComponent implements OnInit {
 
-  iconName1 = "box";
-  iconName2 = "angle-left";
-  iconName3 = "bookmark";
-  iconName4 = "search";
+  iconName1 = 'box';
+  iconName2 = 'angle-left';
+  iconName3 = 'bookmark';
+  iconName4 = 'search';
   constructor() { }
 
   ngOnInit() {

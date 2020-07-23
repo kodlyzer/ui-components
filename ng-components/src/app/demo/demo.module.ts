@@ -18,6 +18,7 @@ import { DemoBadgeComponent } from './demo-badge/demo-badge.component';
 import { DemoHomeComponent } from './demo-home/demo-home.component';
 import { DemoButtonComponent } from './demo-button/demo-button.component';
 import { DemoInputComponent } from '../demo-input/demo-input.component';
+import { DemoNotificationComponent } from './demo-notification/demo-notification.component';
 import { DemoCheckboxComponent } from './demo-checkbox/demo-checkbox.component';
 
 
@@ -26,7 +27,8 @@ import { DemoCheckboxComponent } from './demo-checkbox/demo-checkbox.component';
 const COMPONENTS = [DemoModalComponent, DropdownDemoComponent, DemoHeaderComponent, PageComponent, DemoCardComponent, TreeDemoComponent,
     LivePageComponent, ListgroupDemoComponent,
     TabsDemoComponent, DemoTableComponent,
-    DemoButtonComponent, DemoInputComponent, DemoCheckboxComponent];
+    DemoButtonComponent, DemoInputComponent,
+    DemoNotificationComponent,  DemoCheckboxComponent];
 
 @NgModule({
     imports: [CoreModule, FormsModule, CommonModule],
